@@ -1,0 +1,9 @@
+services:
+  editing-clips:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - editing_data:/data
+volumes:
+  editing_data:
